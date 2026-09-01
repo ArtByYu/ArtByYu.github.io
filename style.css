@@ -261,3 +261,256 @@ h1 em,h2 em{color:var(--rose);font-style:italic}
 }
   .footer{padding-left:6vw;padding-right:6vw;flex-direction:column;align-items:flex-start}
 }
+/* =========================
+   PRICE & ORDER
+========================= */
+
+.price-order-section{
+  padding:9vw 8vw;
+  background:var(--paper);
+}
+
+.centered{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.price-main-card{
+  max-width:1050px;
+  margin:55px auto 22px;
+  padding:45px;
+  background:var(--sage);
+  color:white;
+}
+
+.price-main-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:40px;
+}
+
+.price-number{
+  margin:0;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.15em;
+  opacity:.75;
+}
+
+.price-main-card h3{
+  margin:18px 0 0;
+  font:500 52px/.9 "Cormorant Garamond",serif;
+}
+
+.main-price{
+  text-align:right;
+}
+
+.main-price strong{
+  display:block;
+  font:500 48px/1 "Cormorant Garamond",serif;
+}
+
+.price-tags{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:15px;
+}
+
+.price-tags span{
+  border:1px solid rgba(255,255,255,.6);
+  padding:7px 14px;
+  border-radius:30px;
+  font-size:11px;
+}
+
+.package-details{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:40px;
+  padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.35);
+}
+
+.package-details strong,
+.custom-options strong{
+  display:block;
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.package-details p{
+  margin:0;
+  font-size:12px;
+  line-height:1.6;
+  opacity:.8;
+}
+
+.price-grid{
+  max-width:1050px;
+  margin:0 auto 22px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.price-card{
+  padding:40px;
+  background:var(--white);
+  border:1px solid var(--line);
+}
+
+.price-card h3{
+  margin:18px 0 15px;
+  font:500 42px/.9 "Cormorant Garamond",serif;
+}
+
+.price-description{
+  max-width:450px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.info-list{
+  margin:28px 0;
+  border-top:1px solid var(--line);
+}
+
+.info-list > div{
+  padding:15px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.info-list strong{
+  display:block;
+  font-size:13px;
+  font-weight:500;
+}
+
+.info-list span{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.5;
+}
+
+.order-info{
+  max-width:1050px;
+  margin:0 auto 22px;
+  padding:45px;
+  background:var(--warm);
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:45px 70px;
+}
+
+.order-info h3{
+  margin:0;
+  font:500 40px/.95 "Cormorant Garamond",serif;
+}
+
+.custom-options{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+.custom-options > div{
+  padding-bottom:20px;
+  border-bottom:1px solid var(--line);
+}
+
+.custom-options > div:last-child{
+  padding-bottom:0;
+  border-bottom:0;
+}
+
+.custom-options p{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+
+.price-order-bottom{
+  max-width:1050px;
+  margin:0 auto;
+  padding:42px 45px;
+  background:var(--soft);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.price-order-bottom h3{
+  margin:8px 0 0;
+  font:500 36px/.95 "Cormorant Garamond",serif;
+}
+
+
+/* PRICE & ORDER — MOBILE */
+
+@media(max-width:750px){
+
+  .price-main-card{
+    padding:30px;
+  }
+
+  .price-main-top{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .price-main-card h3{
+    font-size:43px;
+  }
+
+  .main-price{
+    text-align:left;
+  }
+
+  .main-price strong{
+    font-size:40px;
+  }
+
+  .price-tags{
+    justify-content:flex-start;
+  }
+
+  .package-details{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .price-grid{
+    grid-template-columns:1fr;
+  }
+
+  .price-card{
+    padding:30px;
+  }
+
+  .price-card h3{
+    font-size:38px;
+  }
+
+  .order-info{
+    grid-template-columns:1fr;
+    padding:30px;
+    gap:30px;
+  }
+
+  .price-order-bottom{
+    padding:30px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
