@@ -454,63 +454,148 @@ h1 em,h2 em{color:var(--rose);font-style:italic}
   font:500 36px/.95 "Cormorant Garamond",serif;
 }
 
+/* =========================
+   PRICE & ORDER
+========================= */
 
-/* PRICE & ORDER — MOBILE */
+.price-order-section{
+  padding:9vw 8vw;
+  background:var(--paper);
+}
+
+.centered{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.order-cards{
+  max-width:1050px;
+  margin:55px auto 25px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.order-card{
+  padding:40px;
+  background:var(--white);
+  border:1px solid var(--line);
+}
+
+.wedding-order{
+  border:2px solid var(--sage);
+}
+
+.order-card h3{
+  margin:18px 0 25px;
+  font:500 42px/.9 "Cormorant Garamond",serif;
+}
+
+.order-card > p:not(.eyebrow):not(.custom-note){
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.order-price{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:20px;
+  padding:15px 0;
+  margin-bottom:22px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.order-price span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.order-price strong{
+  font:500 32px/1 "Cormorant Garamond",serif;
+}
+
+.order-card ul{
+  list-style:none;
+  padding:0;
+  margin:25px 0 30px;
+}
+
+.order-card li{
+  padding:8px 0;
+  color:var(--muted);
+  font-size:13px;
+  border-bottom:1px solid var(--line);
+}
+
+.order-card li::before{
+  content:"✓";
+  color:var(--sage-dark);
+  margin-right:9px;
+}
+
+.custom-note{
+  margin:25px 0 30px;
+  padding:15px;
+  background:var(--warm);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+
+.order-note{
+  max-width:1050px;
+  margin:0 auto;
+  padding:35px 40px;
+  background:var(--warm);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.order-note h3{
+  margin:8px 0 0;
+  font:500 36px/.95 "Cormorant Garamond",serif;
+}
+
+.order-note > p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+
+
+/* MOBILE */
 
 @media(max-width:750px){
 
-  .price-main-card{
+  .order-cards{
+    grid-template-columns:1fr;
+    margin-top:40px;
+  }
+
+  .order-card{
     padding:30px;
   }
 
-  .price-main-top{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .price-main-card h3{
-    font-size:43px;
-  }
-
-  .main-price{
-    text-align:left;
-  }
-
-  .main-price strong{
-    font-size:40px;
-  }
-
-  .price-tags{
-    justify-content:flex-start;
-  }
-
-  .package-details{
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-
-  .price-grid{
-    grid-template-columns:1fr;
-  }
-
-  .price-card{
-    padding:30px;
-  }
-
-  .price-card h3{
+  .order-card h3{
     font-size:38px;
   }
 
-  .order-info{
-    grid-template-columns:1fr;
-    padding:30px;
-    gap:30px;
+  .order-price strong{
+    font-size:28px;
   }
 
-  .price-order-bottom{
+  .order-note{
+    grid-template-columns:1fr;
     padding:30px;
-    flex-direction:column;
-    align-items:flex-start;
+    gap:20px;
   }
 
 }
+
