@@ -89,10 +89,15 @@ h1 em,h2 em{color:var(--rose);font-style:italic}
   display:grid;grid-template-columns:1.1fr .9fr;gap:7vw;align-items:center;
   margin-bottom:65px
 }
-.feature-photo{margin:0;max-width:690px}
+.feature-photo{
+  margin:0;
+  background:var(--white);
+}
 .feature-photo img{
-  aspect-ratio:1153/2048;object-fit:cover;
-  max-height:760px;box-shadow:0 22px 55px rgba(50,39,25,.15)
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
 }
 .feature-photo figcaption{
   margin-top:12px;font:italic 18px "Cormorant Garamond",serif;color:var(--muted)
